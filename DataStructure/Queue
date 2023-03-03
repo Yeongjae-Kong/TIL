@@ -4,4 +4,4 @@ Queue란 한쪽 끝에서 삽입이 이루어지고 반댓쪽 끝에서 삭제�
 
 가장 마지막에 들어온 데이터가 가장 늦게 삭제됩니다.
 
-이러한 구조를 선입선출, FIFO(First In First Out)
+이러한 구조를 선입선출, FIFO(First In First Out)이라 합니다.
