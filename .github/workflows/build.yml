@@ -37,4 +37,10 @@ jobs:
 
         Last updated: {{ now().astimezone(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M:%S %Z') }}
 
-        list_most_recent: 2
+        ## 2 Most Recent TILs
+
+        {% for post in posts[:3] %}
+        - {{ post.date.astimezone(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M:%S %Z') }}: {{ post.title }}
+        {% endfor %}
+
+        list_most_recent: 3
