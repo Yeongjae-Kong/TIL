@@ -46,7 +46,7 @@ API를 통해서 클라이언트에게 리소스를 공유하고 보안, 인증 
 
 
 
-#### 그렇다면 REST API란 무엇일까요?
+### 그렇다면 REST API란 무엇일까요?
 
 REST는 Representational State Transfer의 약자로,
 
@@ -55,7 +55,7 @@ REST는 Representational State Transfer의 약자로,
 Client와 Server 사이의 통신 방식 중 하나로, URI(Uniform Resource Identifier, URL의 상위 개념)로 POST, GET, PUT, DELETE 및 HTTP 헤더와 같은 HTTP Method를 통해 요청을 보내고, JSON을 통해 표현되어 데이터를 주고 받게 됩니다.
 
 
-#### 이때 REST API의 작동 순서는
+### 이때 REST API의 작동 순서는
 
 1. 클라이언트가 API 문서에 따라 서버에 요청을 전송하면,
 
@@ -67,7 +67,7 @@ Client와 Server 사이의 통신 방식 중 하나로, URI(Uniform Resource Ide
 
 
 
-#### 여기서 요청이 성공했는지의 서버 응답의 종류로
+### 여기서 요청이 성공했는지의 서버 응답의 종류로
 
 - 1XX : 전송 프로토콜 수준의 정보 교환
 
@@ -83,7 +83,7 @@ Client와 Server 사이의 통신 방식 중 하나로, URI(Uniform Resource Ide
 
 
 
-#### REST 아키텍처 스타일에는 몇가지 원칙이 있습니다.
+### REST 아키텍처 스타일에는 몇가지 원칙이 있습니다.
 
 
 
@@ -119,7 +119,7 @@ API 서버에 보안, 로드밸런싱, 암호화등을 계층에 추가하여 �
 
 
 
-또한 REST API에는 아래와 같은 설계 규칙이 있습니다.
+### 또한 REST API에는 아래와 같은 설계 규칙이 있습니다.
 
 1. /는 계층 관계를 나타내는데 사용합니다.
 
@@ -139,7 +139,8 @@ API 서버에 보안, 로드밸런싱, 암호화등을 계층에 추가하여 �
 
 이렇게 설계된 RESTful API에서 요청을 보낼땐 인증(authentication)이 필요합니다.
 
-#### RESTful API의 인증 방법은 아래 네가지가 있습니다.
+
+### RESTful API의 인증 방법은 아래 네가지가 있습니다.
 
 
 
@@ -153,7 +154,7 @@ API 서버에 보안, 로드밸런싱, 암호화등을 계층에 추가하여 �
 
 
 
-#### 이같은 REST API는 AWS의 Amazon API Gateway를 사용하면 API 생성, 유지 관리, 모니터링을 쉽게 할 수 있습니다.
+### 이같은 REST API는 AWS의 Amazon API Gateway를 사용하면 API 생성, 유지 관리, 모니터링을 쉽게 할 수 있습니다.
 
 
 API Gateway를 등록하면 서비스의 엔드포인트 대신 API Gateway로 요청을 전달하여 엔드포인트 서버에서 필요한 인증, 사용량 제어, 요청/응답 변조등의 기능을 플러그인 형태로 사용하여 비용을 절감할 수 있습니다.
