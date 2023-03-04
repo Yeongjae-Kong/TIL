@@ -9,10 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
     - name: Check out repo
       uses: actions/checkout@v2
       with:
@@ -27,20 +23,4 @@ jobs:
           [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
           [2]: https://github.com/jbranchaud/til
           [3]: https://github.com/cflynn07/github-action-til-autoformat-readme
-        template: |
-          # Today I Learned
-
-          A collection of concrete writeups of small things I learn daily while working
-          and researching. My goal is to work in public. I was inspired to start this
-          repository after reading Simon Wilson's [Hacker News post][1], and he was
-          apparently inspired by Josh Branchaud's [TIL collection][2].
-
-        Last updated: {{ now().astimezone(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M:%S %Z') }}
-
-        ## 2 Most Recent TILs
-
-        {% for post in posts[:3] %}
-        - {{ post.date.astimezone(pytz.timezone('Asia/Seoul')).strftime('%Y-%m-%d %H:%M:%S %Z') }}: {{ post.title }}
-        {% endfor %}
-
-        list_most_recent: 3
+        list_most_recent: 3 
