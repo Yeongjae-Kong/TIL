@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Set Timezone to Korea
+      run: |
+        sudo timedatectl set-timezone Asia/Seoul
     - name: Check out repo
       uses: actions/checkout@v2
       with:
