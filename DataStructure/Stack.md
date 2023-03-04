@@ -1,4 +1,4 @@
-Stack이란?
+# Stack이란?
 
 
 Stack은 데이터를 차곡차곡 쌓아 놓은 형태의 자료구조로, 가장 마지막에 삽입된 데이터가 가장 먼저 삭제됩니다.
@@ -16,9 +16,9 @@ isFull()은 stack overflow를 방지하기 위해 stack이 꽉 찼는지 확인�
 
 isEmpty()는 반대로 스택이 비어있는지 확인할 수 있고, boolean을 반환합니다. 
 
+-----------------------------
 
-
-Stack의 활용
+# Stack의 활용
 
 
 - Stack은 재귀함수가 필요할 때 스택 자료구조를 통해 구현할 수 있습니다.
@@ -27,9 +27,9 @@ Stack의 활용
 
 - 그 외에도 프로그램의 실행 취소, C/C++의 main() 함수에서 사용되는 지역변수와 함수를 관리하는데 사용됩니다.
 
+----------------------------
 
-
-Stack의 예제
+# Stack의 예제
 
 
 Stack의 예제로 백준 9012번 문제를 풀어보겠습니다. 
@@ -48,6 +48,7 @@ https://www.acmicpc.net/problem/9012
 
 해당 문제에서는 짝이 맞는지 여부를 YES, NO로 출력하라고 명시되어있기에, 그렇게 코딩해보겠습니다.
 
+``` python
 import sys
 n = int(sys.stdin.readline())
 
@@ -68,6 +69,7 @@ for i in range(n):
             print("YES")
         else: # 스택이 안비어있으면 NO
             print("NO")
+```
 
 
 상단의 sys.stdin.readline()의 경우 input() 대신에 사용하는 것으로,
