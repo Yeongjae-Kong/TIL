@@ -85,3 +85,19 @@ https://www.acmicpc.net/problem/12873
 
 i번째의 세제곱 index가 제거되긴하나, 모듈러 연산을 통해 제거해줄 수 있습니다.
 
+```python
+n = int(input())
+
+queue = [0]*n
+for i in range(n):
+    queue[i] = i+1 #1,2,3...의 Queue 생성
+
+if n == 1: #input array length가 1이면 1출력
+    print(1)
+else:
+    queue.pop(0) #첫번째는 항상 제거됨
+    for i in range(1, n-1):
+        pop_index = ((i+1)**3)%len(queue)-1 #2번째 요소부터 계산
+        queue.pop(pop_index)
+    print(queue.pop())
+```
