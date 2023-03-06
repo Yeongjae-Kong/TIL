@@ -90,14 +90,28 @@ n = int(input())
 
 queue = [0]*n
 for i in range(n):
-    queue[i] = i+1 #1,2,3...의 Queue 생성
+    queue[i] = i+1 # 1,2,3...n의 Queue 생성
 
-if n == 1: #input array length가 1이면 1출력
-    print(1)
+if n == 1: # input length가 1이면 1출력
+    print(queue.pop())
 else:
-    queue.pop(0) #첫번째는 항상 제거됨
+    queue.pop(0) # 첫번째는 항상 제거됨
+    order = 0
     for i in range(1, n-1):
-        pop_index = ((i+1)**3)%len(queue)-1 #2번째 요소부터 계산
-        queue.pop(pop_index)
+        pop_index = ((i+1)**3-1)%len(queue) # 2번째 요소부터 계산
+        order = order+pop_index # n단계가 끝났을 때 그다음 순서부터 계산하기 위함
+        if order >= len(queue):
+            order-=len(queue) # order가 queue의 크기를 넘어갔을 때 다시 index 0부터 순환
+        queue.pop(order)
     print(queue.pop())
 ```
+
+이 문제에서 중요한 것은 t단계가 끝나면 queue가 처음이 아닌 데이터가 빠진 그다음 index부터 계산되어진다는 점입니다.
+
+저는 이를 order라는 변수를 만들어 계산에 사용함으로써 가능하게 하였습니다.
+
+또한 order가 len(queue)보다 커지면 순환 queue와 동일하게 다시 0번째 index부터 시작하게끔 코딩했습니다.
+
+
+
+이같은 예제를 통해 queue의 원리를 더 깊이 이해할 수 있었습니다😊
