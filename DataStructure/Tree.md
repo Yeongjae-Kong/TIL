@@ -139,4 +139,34 @@ Tree 자료구조는 왜 필요할까요?
 
 https://www.acmicpc.net/problem/1068
 
- 
+자식 노드의 개수가 0인 노드를 리프 노드라 합니다.
+
+해당 문제는 트리에서 특정 노드를 지웠을 때 리프 노드의 개수를 출력하는 문제입니다.
+
+이 경우 DFS라 불리는 깊이 우선 탐색을 통해 노드를 전수조사하여 해결할 수 있습니다.
+
+
+```python
+# 백준 1068 트리
+n = int(input())
+tree = list(map(int, input().split()))
+delete = int(input())
+
+def check(delete):
+    tree[delete] = 'x'
+    for i in range(len(tree)):
+        if delete == tree[i]:
+            check(i) # 재귀적인 DFS 방식으로 delete의 자식 노드들을 x로 치환
+check(delete)
+
+cnt = 0
+for i in range(n):
+    if tree[i] != 'x' and i not in tree: # x가 아니고, i가 부모 노드가 아닐 때 = 리프
+        cnt += 1
+
+print(cnt)
+```
+
+check 함수를 통해 처음 input받은 delete index의 노드부터 재귀적으로 탐색하여 x표시 하였고,
+
+반복문으로 x가 아님과 동시에 tree에 들어있는 부모가 아닐 때 카운트를 하도록 했습니다.
