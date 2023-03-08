@@ -3,15 +3,15 @@
 
 공부한 내용 정리
 
-_4 TILs and counting..._
+_5 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [Heap이란?](DataStructure/Heap.md) - Wed Mar 8 15:00:12 2023 +0000
 - [Queue란?](DataStructure/Queue.md) - Sat Mar 4 03:14:00 2023 +0000
 - [Stack이란?](DataStructure/Stack.md) - Sat Mar 4 03:18:54 2023 +0000
-- [Tree란?](DataStructure/Tree.md) - Mon Mar 6 15:03:12 2023 +0000
 
 ### Categories
 
@@ -19,6 +19,7 @@ _4 TILs and counting..._
 - [Network](#Network)
 
 ### [DataStructure](#DataStructure)
+- [Heap이란?](DataStructure/Heap.md)
 - [Queue란?](DataStructure/Queue.md)
 - [Stack이란?](DataStructure/Stack.md)
 - [Tree란?](DataStructure/Tree.md)
