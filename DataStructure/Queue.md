@@ -77,10 +77,8 @@ enQueue를 실행하면 그 메모리를 가리키는 포인터가 모듈러 연
 
 Queue의 예제로 백준 12873번을 풀어보겠습니다.
 
-<br/>
 https://www.acmicpc.net/problem/12873
 
-<br/>
 
 해당 문제는 원으로 둘러쌓인 원형 Queue라 생각할 수 있습니다.
 

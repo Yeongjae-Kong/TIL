@@ -9,6 +9,8 @@ Tree란 노드와 브랜치를 이용하는 비선형의 자료구조로, 계층
 
 # Tree 구조
 
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FR2RwY%2Fbtr2rDJcvxq%2FSysgFCtqf7yk1UPWP9kvgK%2Fimg.png"/>
+
 위 그림의 A, B 등을 각각 노드라 칭하고, 상위 계층의 노드가 없는 A 노드를 루트 노드라 합니다.
 
 A-B / B-E와 같이 수직 관계를 가지는 노드를 각각 부모 노드, 자식 노드라 하며
@@ -71,6 +73,8 @@ Tree의 종류로는 기본적으로 이진트리(Binary Tree)와 완전 이진�
 
 따라서 이진 검색트리는 아래와 같은 구조를 가지게 됩니다.
 
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbbo2Aj%2Fbtr2vUqPuex%2Ftg5SokTaukQg5q1rgDJgok%2Fimg.png"/>
+
 
 이러한 속성을 가지는 이유는 이진 검색트리가 탐색의 효율성을 높이기 위해 고안되었기 때문입니다.
 
@@ -95,6 +99,7 @@ Tree의 종류로는 기본적으로 이진트리(Binary Tree)와 완전 이진�
 
 이또한 재귀적으로 오른쪽 자식 노드의 서브트리를 중위 순회로 탐색해야 합니다. 
 
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FceUNh9%2Fbtr2vosajCc%2FfVguCAZkgZLRB3XHrnVzJ1%2Fimg.png"/>
 
 해당 트리를 중위 순회 시 A > B > C > D > E > F > G > H > I 로 출력하게 됩니다.
 
