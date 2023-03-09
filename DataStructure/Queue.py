@@ -16,3 +16,22 @@
 
 # 출력
 # 첫째 줄에 기념품을 받는 사람이 입고 있는 티셔츠의 번호를 출력한다.
+
+n = int(input())
+
+queue = [0]*n
+for i in range(n):
+    queue[i] = i+1 # 1,2,3...n의 Queue 생성
+
+if n == 1: # input length가 1이면 1출력
+    print(queue.pop())
+else:
+    queue.pop(0) # 첫번째는 항상 제거됨
+    order = 0
+    for i in range(1, n-1):
+        pop_index = ((i+1)**3-1)%len(queue) # 2번째 요소부터 계산
+        order = order+pop_index # n단계가 끝났을 때 그다음 순서부터 계산하기 위함
+        if order >= len(queue):
+            order-=len(queue) # order가 queue의 크기를 넘어갔을 때 다시 index 0부터 순환
+        queue.pop(order)
+    print(queue.pop())
