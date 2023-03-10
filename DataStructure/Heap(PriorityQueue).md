@@ -28,6 +28,8 @@
 
 또한 이진탐색트리는 중복을 허용하지 않지만 힙은 중복을 허용합니다.
 
+<img src="https://blog.kakaocdn.net/dn/TsYAA/btr21BDewYV/Ctl60C7TYYBVB6BTtSfADk/img.png"/>
+
 
 <br/>
 
