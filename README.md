@@ -9,7 +9,7 @@ _5 TILs and counting..._
 
 ### 3 most recent TILs
 
-- [Heap이란?](DataStructure/Heap.md) - Wed Mar 8 15:00:12 2023 +0000
+- [Heap이란?](DataStructure/Heap(PriorityQueue).md) - Fri Mar 10 14:47:08 2023 +0000
 - [Queue란?](DataStructure/Queue.md) - Sat Mar 4 03:14:00 2023 +0000
 - [Stack이란?](DataStructure/Stack.md) - Sat Mar 4 03:18:54 2023 +0000
 
@@ -19,7 +19,7 @@ _5 TILs and counting..._
 - [Network](#Network)
 
 ### [DataStructure](#DataStructure)
-- [Heap이란?](DataStructure/Heap.md)
+- [Heap이란?](DataStructure/Heap(PriorityQueue).md)
 - [Queue란?](DataStructure/Queue.md)
 - [Stack이란?](DataStructure/Stack.md)
 - [Tree란?](DataStructure/Tree.md)
