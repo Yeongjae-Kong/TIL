@@ -9,7 +9,7 @@ _7 TILs and counting..._
 
 ### 3 most recent TILs
 
-- [](DataStructure/Chaining_vs_OpenAddressing.md) - Mon Mar 13 14:43:10 2023 +0000
+- [Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)](DataStructure/Chaining_vs_OpenAddressing.md) - Mon Mar 13 14:43:10 2023 +0000
 - [Hashing이란?](DataStructure/HashTable.md) - Sun Mar 12 14:59:46 2023 +0000
 - [Heap이란?](DataStructure/Heap(PriorityQueue).md) - Fri Mar 10 14:47:08 2023 +0000
 
@@ -19,7 +19,7 @@ _7 TILs and counting..._
 - [Network](#Network)
 
 ### [DataStructure](#DataStructure)
-- [](DataStructure/Chaining_vs_OpenAddressing.md)
+- [Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)](DataStructure/Chaining_vs_OpenAddressing.md)
 - [Hashing이란?](DataStructure/HashTable.md)
 - [Heap이란?](DataStructure/Heap(PriorityQueue).md)
 - [Queue란?](DataStructure/Queue.md)
