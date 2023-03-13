@@ -1,4 +1,3 @@
-
 # Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)
 
 
