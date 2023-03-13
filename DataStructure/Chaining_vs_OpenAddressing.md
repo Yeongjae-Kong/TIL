@@ -1,5 +1,5 @@
 
-## Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)
+# Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)
 
 
 삭제 연산을 수행할 때, 해시 함수의 리턴값이 같은 Key가 여러개 있는 경우
@@ -11,6 +11,8 @@ Chaining 기법은 연결 리스트의 삭제 방법과 동일하게 포인터�
 이때 삽입 및 탐색 과정에서 삭제로 인해 비어진 공간을 보고 값이 저장되지 않았다고 판단할 수 있습니다.
 
 이렇게 되면 그 이후 Index에 저장된 pair를 찾을 수 없게 됩니다.
+
+<br/>
 
 Linear Probing을 예로 들면, n+1 Index의 (key, value)를 삭제했을 때, n+1 index의 bucket이 비게 되고 추후 탐색을 수행할 때 빈 공간을 만나면 더이상 탐색을 지속하지 않아 n+2 Index의 (key, value)를 찾을 수 없게 될 수 있습니다.
 
@@ -53,6 +55,6 @@ Java는 Robust한 언어라 불리기에 메모리 관리의 안전성과 견고
 
 위와 같은 수식을 통해 더 효율적으로 해시 충돌을 해결하였습니다.
 
-python github 공식문서를 보면 디테일한 내용을 알 수 있습니다.
+python github 공식문서에서 더욱 디테일한 내용을 찾을 수 있습니다.
 
 https://github.com/python/cpython/blob/v3.9.1/Objects/dictobject.c#L133
