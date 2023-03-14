@@ -1,5 +1,6 @@
 # Hashing이란?
 
+<br/>
 
 Hash Table을 알기 전에 Hashing의 개념부터 이해해야 합니다.
 
@@ -24,10 +25,13 @@ Hash함수는 아래와 같은 종류가 있습니다.
 
 # HashTable이란?
 
+<br/>
 
 인풋값을 Key로 사용하여 위의 Hash 함수를 통해 인덱스로 변환, 변환한 인덱스의 주소에 Value를 집어넣고 (Key, Value) 형태로 데이터를 저장하는 자료구조입니다. HashTable을 통해 Dict 자료구조를 효율적으로 구현할 수 있습니다.
 
 <br/>
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcedbRf%2Fbtr3cC4qn3V%2FT9AeSWoRKJQO9fehnBWOG1%2Fimg.png"/>
 
 따라서 (John Smith, 521-1234)의 데이터가 있을 때 John Smith는 해시함수를 통과하여 1이라는 값으로 변환되고, bucket의 1번째 인덱스에 (John Smith, 521-1234)가 저장되게 됩니다.
 
@@ -39,15 +43,13 @@ Hash함수는 아래와 같은 종류가 있습니다.
 
 <br/>
 
-1. Separate Chaining
+### 1. Separate Chaining
 
 <br/>
 
 Chaining 기법은 충돌이 발생했을 때 같은 bucket 내에서 추가 메모리(캐시)를 사용하여 연결리스트 형태로 다음 데이터의 주소를 저장하는 방법입니다.
 
-이 방법을 통해 해시 테이블을 크기 확장없이 구현 가능하지만,
-
-원래 해시 테이블의 삽입 및 삭제의 시간복잡도가 O(1)인 반면, Bad case의 경우 최대 Key값의 개수만큼 연결리스트 엔트리가 증가하여 시간복잡도가 O(n)까지 증가할 수 있으며 그에 따라 캐시의 효율성이 감소할 수 있습니다.
+이 방법을 통해 해시 테이블을 크기 확장없이 구현 가능하지만, 원래 해시 테이블의 삽입 및 삭제의 시간복잡도가 O(1)인 반면, Bad case의 경우 최대 Key값의 개수만큼 연결리스트 엔트리가 증가하여 시간복잡도가 O(n)까지 증가할 수 있으며 그에 따라 캐시의 효율성이 감소할 수 있습니다.
 
 <br/>
 
@@ -59,7 +61,7 @@ Chaining 기법은 충돌이 발생했을 때 같은 bucket 내에서 추가 메
 
 <br/>
 
-2. Open Addressing
+### 2. Open Addressing
 
 <br/>
 
@@ -85,6 +87,8 @@ Open Addressing 기법은 Chaining처럼 추가 메모리를 사용하지 않고
 
 <br/>
 
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr32u7%2Fbtr3kylP7nd%2Fy3v2yXiR3MlCTYjoMbWw4k%2Fimg.png"/>
+
 
 위 표는 LF에 따른 평균 탐색 성공 수와 실패 수입니다.
 
@@ -106,6 +110,7 @@ linear probing < quadratic probing < double hasing의 순서로 효율적으로 
 
 ## 추가) HashTable / HashMap / ConcurrentHashMap
 
+<br/>
 
 Map을 구현할 때, Java에선 HashTable, HashMap, ConcurrentHashMap 세가지 방법으로 구현할 수 있습니다.
 
@@ -121,7 +126,7 @@ Map을 구현할 때, Java에선 HashTable, HashMap, ConcurrentHashMap 세가지
 
 - ConcurrentHashMap 클래스는 HashMap의 동기화 이슈를 해결하기 위해 고안되었는데, 동기화 처리를 할 때 어떤 엔트리를 조작하는 경우에 해당 엔트리에 대해서만 block을 겁니다. 즉, 쓰레드 간 락을 거는 HashTable과 달리 엔트리 아이템 별로 block을 걸기에 thread-safe하여 멀티 쓰레드에서 동작하면서도 HashTable보다 성능을 향상시켰습니다.
 
-
+<br/>
 
 # HashTable 예제
 
