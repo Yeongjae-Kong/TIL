@@ -1,7 +1,8 @@
 # Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)
 
+<br/>
 
-삭제 연산을 수행할 때, 해시 함수의 리턴값이 같은 Key가 여러개 있는 경우
+HashTable 자료구조에서 삭제 연산을 수행할 때, 해시 함수의 리턴값이 같은 Key가 여러개 있는 경우(=collision이 발생할 경우)
 
 Chaining 기법은 연결 리스트의 삭제 방법과 동일하게 포인터가 다음 노드를 가르키도록 변경합니다.
 
@@ -29,7 +30,7 @@ C와 같은 Low-level 언어가 아니면 자동적으로 garbage collection이 
 
 <br/>
 
-
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcbgqmp%2Fbtr3eCieKFd%2FvhHhfnKreMXaEtSQtUjkA0%2Fimg.png"/>
 
 
 이러한 이유들로 인해 Java의 HashMap에서는 Open Addressing이 아닌 Separate Chaining 방법을 사용하고 있습니다.
@@ -51,6 +52,8 @@ Java는 Robust한 언어라 불리기에 메모리 관리의 안전성과 견고
 또한 파이썬의 Dict는 Open Addressing 중에서도 Pertubation Shift Probing이라는 고유의 방법을 사용합니다.
 
 <br/>
+
+<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbwPFC3%2Fbtr3uD743zK%2FPdbzktJbRGGpjSNVBa3hNk%2Fimg.png"/>
 
 위와 같은 수식을 통해 더 효율적으로 해시 충돌을 해결하였습니다.
 
