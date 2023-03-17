@@ -41,3 +41,5 @@ MST는 Greedy Algorithm인 kruskal Algorithm으로 구현할 수 있습니다.
 Vertex가 Edge로 직접 연결되어있으면 1, 그렇지 않으면 0인 2차원 배열을 통해 그래프를 구현합니다.
 
 <img src="https://blog.kakaocdn.net/dn/LakX6/btr4gEGu4Wu/KO5sBCYPDFutGKreVfgTgK/img.png"/>
+
+- 인접그래프
