@@ -42,15 +42,17 @@ Vertex가 Edge로 직접 연결되어있으면 1, 그렇지 않으면 0인 2차�
 
 <img src="https://blog.kakaocdn.net/dn/LakX6/btr4gEGu4Wu/KO5sBCYPDFutGKreVfgTgK/img.png"/>
 
+<br/>
+
 - 인접리스트
 
 리스트를 통해 Vertex와 연결되어 있는 노드를 해당 노드의 인덱스에 삽입하는 방식으로 그래프를 구현합니다.
 
 탐색 시 O(n)의 속도가 걸리며, 인접행렬과 달리 필요한 공간만 사용하기 때문에 공간 낭비가 적습니다.
 
+<img src="https://blog.kakaocdn.net/dn/bgz3yA/btr4TIBNHGU/KXWpX99pvXVRKlUBay9pV0/img.png"/>
 
-
-
+<br/>
 
 
 따라서 Vertex의 수에 비해 Edge의 수가 적은 Sparse Graph일 땐 공간 낭비가 적은 인접리스트를 사용하는게 좋고,
@@ -59,26 +61,73 @@ Vertex의 수에 비해 Edge의 수가 많은 Dense Graph일 경우엔 탐색이
 
 
 
-# DFS, BFS﻿
+# DFS, BFS
 
-DFS와 BFS 모두 그래프에서 탐색 시 사용하는 방법의 일종입니다.
+DFS와 BFS 모두 연결된 그래프를 완전탐색할 때 사용하는 방법입니다.
 
+<br/>
 
+- DFS란 Depth First Search, 즉 깊이 우선 탐색을 의미하며 한 노드에서 연결되어 있는 노드로 최대한 계속 나아가는 탐색 방법을 말합니다. 더이상 연결된 노드가 없을 때, 이전 노드로 돌아가서 다른 연결된 노드를 탐색하게 됩니다. 
 
-DFS란 Depth First Search, 즉 깊이 우선 탐색을 의미하며 한 노드에서 연결되어 있는 노드로 최대한 계속 나아가는 탐색 방법을 말합니다. 더이상 연결된 노드가 없을 때, 이전 노드로 돌아가서 다른 연결된 노드를 탐색하게 됩니다. 
+<br/>
 
-
-
-DFS의 경우 이전 노드로 되돌아갈 때 Last In First Out의 특성을 가진 Stack을 이용하면 쉽게 구현할 수 있고
+DFS의 경우 이전 노드로 되돌아갈 때 Last In First Out의 특성을 가진 Stack 혹은 재귀적인 특성을 이용하여 구현합니다.
 
  저장 공간이 BFS에 비해 덜 필요하지만, 탐색 속도가 BFS보다 느리다는 단점이 있습니다.
 
+<br/>
 
+- BFS는 Breadth First Search, 너비 우선 탐색을 의미합니다. 노드에서 가까운 노드를 먼저 방문한 뒤 그 다음 가까운 노드를 방문하는 탐색 방식입니다. DFS와 다르게 Queue를 통해 구현합니다.
 
-BFS는 Breadth First Search, 너비 우선 탐색을 의미합니다. 노드에서 가까운 노드를 먼저 방문한 뒤 그 다음 가까운 노드를 방문하는 탐색 방식입니다. DFS와 다르게 Queue를 통해 구현합니다.
+<br/>
 
 탐색 속도가 빠르며, 큐에 다음 탐색할 정점들을 저장하는 방식으로 저장공간이 많이 필요하게 됩니다.
 
 노드의 수가 많아질수록 탐색 시간이 커집니다.
 
-따라서 
+<br/>
+
+따라서 각각의 경로마다 특징을 저장해야 하는 문제는 DFS, 가중치가 모두 같은 그래프에서 최단거리를 구해야 하는 문제는 BFS를 이용하는 것이 좋습니다.
+
+<br/>
+
+# Graph 예제
+
+https://www.acmicpc.net/problem/1260
+
+이 문제는 Input인 Vertex, Edge, root node의 Dfs, Bfs 결과를 각각 출력하는 문제입니다.
+
+인접 행렬을 사용하여 구현하였습니다.
+
+```python
+n, m, v = map(int, input().split())
+
+matrix=[[0]*(n+1) for i in range(n+1)] #인접 행렬
+
+visit = [0]*(n+1)
+
+for i in range(m):
+    a,b=map(int, input().split())
+    matrix[a][b]=matrix[b][a]=1 #입력 간선을 연결
+    
+def dfs(v):
+    visit[v]=1
+    print(V, end=' ')
+    for i in range(1, n+1):
+        if(visit[i]==0 and matrix[v][i]==1):
+            dfs(i)
+            
+def bfs(v):
+    queue=[v]
+    visit[v]=0
+    while queue:
+        v=queue.pop(0)
+        print(v, end=' ')
+        for i in range(1, n+1):
+            if(visit[i]==1 and matrix[v][i]==1):
+                queue.append(i)
+                visit[i]=0
+dfs(v)
+print()
+bfs(v)
+```
