@@ -3,15 +3,15 @@
 
 공부한 내용 정리
 
-_8 TILs and counting..._
+_9 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [Skiplist란?](DataStructure/Skiplist.md) - Wed Mar 22 13:57:36 2023 +0000
 - [Graph란?](DataStructure/Graph.md) - Wed Mar 15 15:01:43 2023 +0000
 - [Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)](DataStructure/Chaining_vs_OpenAddressing.md) - Mon Mar 13 14:43:10 2023 +0000
-- [Hashing이란?](DataStructure/HashTable.md) - Sun Mar 12 14:59:46 2023 +0000
 
 ### Categories
 
@@ -24,6 +24,7 @@ _8 TILs and counting..._
 - [Hashing이란?](DataStructure/HashTable.md)
 - [Heap이란?](DataStructure/Heap(PriorityQueue).md)
 - [Queue란?](DataStructure/Queue.md)
+- [Skiplist란?](DataStructure/Skiplist.md)
 - [Stack이란?](DataStructure/Stack.md)
 - [Tree란?](DataStructure/Tree.md)
 
