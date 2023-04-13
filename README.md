@@ -3,15 +3,15 @@
 
 공부한 내용 정리
 
-_9 TILs and counting..._
+_10 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [AVL tree란?](DataStructure/AVLtree.md) - Fri Mar 24 15:00:12 2023 +0000
 - [Skiplist란?](DataStructure/Skiplist.md) - Wed Mar 22 13:57:36 2023 +0000
 - [Graph란?](DataStructure/Graph.md) - Wed Mar 15 15:01:43 2023 +0000
-- [Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)](DataStructure/Chaining_vs_OpenAddressing.md) - Mon Mar 13 14:43:10 2023 +0000
 
 ### Categories
 
@@ -19,6 +19,7 @@ _9 TILs and counting..._
 - [Network](#Network)
 
 ### [DataStructure](#DataStructure)
+- [AVL tree란?](DataStructure/AVLtree.md)
 - [Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)](DataStructure/Chaining_vs_OpenAddressing.md)
 - [Graph란?](DataStructure/Graph.md)
 - [Hashing이란?](DataStructure/HashTable.md)
