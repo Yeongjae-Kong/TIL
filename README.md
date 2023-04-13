@@ -3,19 +3,20 @@
 
 공부한 내용 정리
 
-_10 TILs and counting..._
+_11 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
+- [React와 Next.js의 차이? / Next.js의 필요성](FE/React_vs_Next.js.md) - Thu Apr 13 15:01:53 2023 +0000
 - [AVL tree란?](DataStructure/AVLtree.md) - Fri Mar 24 15:00:12 2023 +0000
 - [Skiplist란?](DataStructure/Skiplist.md) - Wed Mar 22 13:57:36 2023 +0000
-- [Graph란?](DataStructure/Graph.md) - Wed Mar 15 15:01:43 2023 +0000
 
 ### Categories
 
 - [DataStructure](#DataStructure)
+- [FE](#FE)
 - [Network](#Network)
 
 ### [DataStructure](#DataStructure)
@@ -28,6 +29,9 @@ _10 TILs and counting..._
 - [Skiplist란?](DataStructure/Skiplist.md)
 - [Stack이란?](DataStructure/Stack.md)
 - [Tree란?](DataStructure/Tree.md)
+
+### [FE](#FE)
+- [React와 Next.js의 차이? / Next.js의 필요성](FE/React_vs_Next.js.md)
 
 ### [Network](#Network)
 - [API란 무엇일까요?](Network/RESTAPI.md)
