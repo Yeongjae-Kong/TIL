@@ -17,7 +17,6 @@ React는 Javascript 기반의 SPA 웹 프레임워크입니다. 컴포넌트를 
 
 
 
-
 npm trends
 
 
@@ -40,6 +39,7 @@ Next.js는 풀스택 프레임워크로 백엔드 개발도 가능합니다.
 
 대표적인 기능은 다음과 같습니다.
 
+
 - Hot reloading : 저장되는 코드를 자동으로 새로고침
 
 - Automatic routing : 따로 라우팅하지 않아도 pages 폴더에 있는 파일이 해당 파일 이름으로 라우팅됩니다.
@@ -60,7 +60,7 @@ Next.js는 풀스택 프레임워크로 백엔드 개발도 가능합니다.
 
 
 
-활용
+# 활용
 
 https://techblog.lotteon.com/next-js-%EB%A1%9C-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-isomorphic-javascript-c77595b626c5
 
