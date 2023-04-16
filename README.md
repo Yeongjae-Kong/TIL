@@ -1,7 +1,7 @@
 # TIL
 > Today I Learned
 
-공부한 내용 정리
+당일 학습한 내용을 정리합니다. README 파일의 경우 GitHub Actions를 통해 자동생성하고 있습니다.
 
 _12 TILs and counting..._
 
