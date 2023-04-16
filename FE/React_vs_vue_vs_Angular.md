@@ -44,15 +44,15 @@ React와 Vue, Angular는 각각 무엇이며 그 차이점은 무엇일지에 �
 
 이는 커뮤니티가 방대하다는 의미이며, 따라서 어려움이 있을 때 정보를 얻고 활용하기 쉽습니다.
 
+아래는 커뮤니티의 사이즈를 유추할 수 있는 StackOverflow 질문율과 NPM download 순위입니다.
+
 </br>
 
 <img src="https://blog.kakaocdn.net/dn/LAZyC/btrJwuJAeuy/QiE77r2MwpsbEDzJqwzxkK/img.png">
-Stack Overflow 질문율
 
 </br>
 
 <img src="https://blog.kakaocdn.net/dn/cIrcoK/btrJD27CQOm/YPEnm1zGX0NFLq7JL48fjk/img.png">
-NPM Download 순위
 
 </br>
 
