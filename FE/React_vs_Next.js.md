@@ -69,7 +69,7 @@ Next.js는 풀스택 프레임워크로, 백엔드 개발도 가능합니다.
 </br>
 
 
-1. app directory 추가
+### 1. app directory 추가
 
 Next.js에서는 react-router-dom 없이 Automatic routing이 가능하도록 하는 파일시스템 기반 라우팅을 위한 pages 디렉토리가 있었습니다. 13버전에서 라우팅 방식을 향상시킨 app 폴더가 추가로 생겼습니다. 현재는 pages와 app 모두 사용가능한 베타 버전입니다.
 
@@ -115,7 +115,7 @@ Client component를 원한다면 'use client' 명령어를 통해 선택적인 �
 
 </br>
 
-2. Turbopack
+### 2. Turbopack
 
 
 </br>
@@ -128,7 +128,7 @@ Client component를 원한다면 'use client' 명령어를 통해 선택적인 �
 </br>
 
 
-3. next/image
+### 3. next/image
 
 </br>
 
@@ -138,7 +138,7 @@ Image 컴포넌트를 통해 이미지 파일을 넣으면, 이미지 로드가 
 
 </br>
 
-4. next/font
+### 4. next/font
 
 
 </br>
@@ -151,7 +151,7 @@ const font = Inter();
 ```
 </br>
 
-5. next/link
+### 5. next/link
 
 
 </br>
@@ -161,7 +161,7 @@ const font = Inter();
 
 </br>
 
-6. OpenGraph Image
+### 6. OpenGraph Image
 
 
 </br>
@@ -171,7 +171,7 @@ OpenGraph Image란 카카오톡 #으로 검색했을 때 제목과 이미지가 
 
 </br>
 
-7. Middleware API
+### 7. Middleware API
 
 
 </br>
