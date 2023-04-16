@@ -2,6 +2,7 @@
 > Today I Learned
 
 당일 학습한 내용을 정리합니다.
+README의 경우 GitHub Actions를 통해 자동생성하고 있습니다.
 
 _11 TILs and counting..._
 
@@ -10,7 +11,7 @@ _11 TILs and counting..._
 ### 3 most recent TILs
 
 - [React와 Next.js의 차이? / Next.js의 필요성](FE/React_vs_Next.js.md) - Thu Apr 13 15:01:53 2023 +0000
-- [AVL Tree란?](DataStructure/AVLtree.md) - Fri Mar 24 15:00:12 2023 +0000
+- [AVL tree란?](DataStructure/AVLtree.md) - Fri Mar 24 15:00:12 2023 +0000
 - [Skiplist란?](DataStructure/Skiplist.md) - Wed Mar 22 13:57:36 2023 +0000
 
 ### Categories
@@ -20,7 +21,7 @@ _11 TILs and counting..._
 - [Network](#Network)
 
 ### [DataStructure](#DataStructure)
-- [AVL Tree란?](DataStructure/AVLtree.md)
+- [AVL tree란?](DataStructure/AVLtree.md)
 - [Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)](DataStructure/Chaining_vs_OpenAddressing.md)
 - [Graph란?](DataStructure/Graph.md)
 - [Hashing이란?](DataStructure/HashTable.md)
