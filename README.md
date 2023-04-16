@@ -1,11 +1,8 @@
 # TIL
 > Today I Learned
 
-<<<<<<< HEAD
-=======
 당일 학습한 내용을 정리합니다.
 README의 경우 GitHub Actions를 통해 자동생성하고 있습니다.
->>>>>>> 120f1ac19c2bc4c26347f4310d3d58381934da7f
 
 _12 TILs and counting..._
 
