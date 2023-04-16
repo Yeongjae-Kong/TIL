@@ -1,7 +1,7 @@
 # TIL
 > Today I Learned
 
-공부한 내용 정리
+당일 학습한 내용을 정리합니다.
 
 _11 TILs and counting..._
 
