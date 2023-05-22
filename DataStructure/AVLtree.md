@@ -1,6 +1,5 @@
 # AVL Tree란?
 
-
 AVL 트리란 자가 균형 이진 탐색 트리(Self-Balanced Binary Search Tree)의 한 유형입니다. Adelson-Velsky와 Landis가 1962년에 발명하였으며, 이들의 앞글자를 따서 이름을 붙였습니다. AVL 트리는 각 노드의 서브트리 높이 차이가 최대 1을 유지하며, 이 차이를 균형 계수(Balance Factor, BF)라 합니다. 그렇기에 삽입과 삭제 연산을 수행할 때마다 트리의 균형 계수를 체크하고, 균형 계수가 1보다 커질 때 회전(Rotation) 연산을 통해 균형을 유지합니다.
 
 </br>
