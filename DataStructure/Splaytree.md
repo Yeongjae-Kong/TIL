@@ -1,6 +1,5 @@
 # Splay tree란?
  
-</br>
 Splay tree는 이진검색트리(Binary Search Tree)의 한 종류로, 다른 BST(AVL tree, R-B tree 등)보다 구현이 쉽고, 연산을 amortized O(logn)의 시간복잡도로 수행할 수 있습니다. amortized O notation은 일반적으로 사용되는 big-O notation과 달리, 시간 복잡도를 실행 시간의 상한 점근이 아닌, 최악의 경우에 대한 해당 연산의 평균 시간복잡도를 나타냅니다. 따라서 최악의 경우에서 연산 시간복잡도가 O(logn)임을 보장한다는 의미라고 생각하시면 됩니다.
 
 Splay tree는 삽입, 삭제, 검색의 연산을 수행한 뒤, splay를 통해 최근에 접근한 노드를 루트에 위치시켜 트리를 재구성합니다. 즉, 자주 탐색하는 키를 가진 노드를 루트에 가깝게 위치하도록 구성하여 연산의 효율성을 높인 트리입니다.
