@@ -10,7 +10,7 @@ _15 TILs and counting..._
 ### 3 most recent TILs
 
 - [Red-Black tree란?](DataStructure/Red_Black_tree.md) - Sun May 28 04:16:01 2023 +0000
-- [B_tree란?](DataStructure/B_trees.md) - Mon May 22 14:55:21 2023 +0000
+- [B-tree란?](DataStructure/B_trees.md) - Mon May 22 14:55:21 2023 +0000
 - [Splay tree란?](DataStructure/Splaytree.md) - Mon May 22 14:55:21 2023 +0000
 
 ### Categories
@@ -21,7 +21,7 @@ _15 TILs and counting..._
 
 ### [DataStructure](#DataStructure)
 - [AVL Tree란?](DataStructure/AVLtree.md)
-- [B_tree란?](DataStructure/B_trees.md)
+- [B-tree란?](DataStructure/B_trees.md)
 - [Separate Chaining과 Open Addressing에 관한 고찰 (with Java & Python)](DataStructure/Chaining_vs_OpenAddressing.md)
 - [Graph란?](DataStructure/Graph.md)
 - [Hashing이란?](DataStructure/HashTable.md)
