@@ -11,7 +11,7 @@ _18 TILs and counting..._
 
 - [서론](AWS/day1.md) - Sat Jun 10 04:25:48 2023 +0000
 - [AWS 서비스 및 기능](AWS/day2_aws_services.md) - Sat Jun 10 04:25:48 2023 +0000
-- [도메인 1: 클라우드 개념](AWS/day3_awsccp_domain.md) - Sat Jun 10 04:25:48 2023 +0000
+- [AWS CCP 도메인](AWS/day3_awsccp_domain.md) - Sat Jun 10 04:25:48 2023 +0000
 
 ### Categories
 
@@ -23,7 +23,7 @@ _18 TILs and counting..._
 ### [AWS](#AWS)
 - [서론](AWS/day1.md)
 - [AWS 서비스 및 기능](AWS/day2_aws_services.md)
-- [도메인 1: 클라우드 개념](AWS/day3_awsccp_domain.md)
+- [AWS CCP 도메인](AWS/day3_awsccp_domain.md)
 
 ### [DataStructure](#DataStructure)
 - [AVL Tree란?](DataStructure/AVLtree.md)
