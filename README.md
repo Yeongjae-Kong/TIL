@@ -3,21 +3,27 @@
 
 당일 학습한 내용을 정리합니다. README의 경우 GitHub Actions를 통해 자동생성하고 있습니다.
 
-_15 TILs and counting..._
+_18 TILs and counting..._
 
 ---
 
 ### 3 most recent TILs
 
-- [Red-Black tree란?](DataStructure/Red_Black_tree.md) - Sun May 28 04:16:01 2023 +0000
-- [B-tree란?](DataStructure/B_trees.md) - Mon May 22 14:55:21 2023 +0000
-- [Splay tree란?](DataStructure/Splaytree.md) - Mon May 22 14:55:21 2023 +0000
+- [서론](AWS/day1.md) - Sat Jun 10 04:25:48 2023 +0000
+- [AWS 서비스 및 기능](AWS/day2_aws_services.md) - Sat Jun 10 04:25:48 2023 +0000
+- [도메인 1: 클라우드 개념](AWS/day3_awsccp_domain.md) - Sat Jun 10 04:25:48 2023 +0000
 
 ### Categories
 
+- [AWS](#AWS)
 - [DataStructure](#DataStructure)
 - [FE](#FE)
 - [Network](#Network)
+
+### [AWS](#AWS)
+- [서론](AWS/day1.md)
+- [AWS 서비스 및 기능](AWS/day2_aws_services.md)
+- [도메인 1: 클라우드 개념](AWS/day3_awsccp_domain.md)
 
 ### [DataStructure](#DataStructure)
 - [AVL Tree란?](DataStructure/AVLtree.md)
