@@ -9,7 +9,7 @@ _19 TILs and counting..._
 
 ### 3 most recent TILs
 
-- [AWS CCP 내용 총정리](AWS/day4_awsccp_note.md) - Sun Jun 11 13:25:47 2023 +0000
+- [AWS CCP 내용 정리 - 클라우드 컴퓨팅, Well-Architected, IAM, S3](AWS/day4_awsccp_note.md) - Sun Jun 11 13:25:47 2023 +0000
 - [서론](AWS/day1.md) - Sat Jun 10 04:25:48 2023 +0000
 - [AWS 서비스 및 기능](AWS/day2_aws_services.md) - Sat Jun 10 04:25:48 2023 +0000
 
@@ -24,7 +24,7 @@ _19 TILs and counting..._
 - [서론](AWS/day1.md)
 - [AWS 서비스 및 기능](AWS/day2_aws_services.md)
 - [AWS CCP 도메인](AWS/day3_awsccp_domain.md)
-- [AWS CCP 내용 총정리](AWS/day4_awsccp_note.md)
+- [AWS CCP 내용 정리 - 클라우드 컴퓨팅, Well-Architected, IAM, S3](AWS/day4_awsccp_note.md)
 
 ### [DataStructure](#DataStructure)
 - [AVL Tree란?](DataStructure/AVLtree.md)
