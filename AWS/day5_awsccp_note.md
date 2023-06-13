@@ -1,4 +1,4 @@
-# AWS CCP 내용 정리 - Cloudfront, EC2, ELB
+# AWS CCP 내용 정리 - Cloudfront, EC2, ELB, DB
 
 ----------------------------------------
 
@@ -79,4 +79,30 @@ Setup index.html - Hello, this is web server 1
 1. 애플리케이션 로드 밸런서(HTTP 및 HTTPS) - 계층 7 인식(지능적인 의사 결정).
 2. 네트워크 로드 밸런서(TCP, TLS 및 UDP) - 최고 성능/정적 IP 주소.
 3. 클래식 로드 밸런서(HTTP, HTTPS 및 TCP용 이전 세대) - 낮은 비용을 유지하기 위한 테스트 및 개발.
+
+## DB
+1. AWS의 관계형 데이터베이스 - RDS:
+    1.1 SQL 서버
+    1.2 오라클
+    1.3 PostgreSQL
+    1.4 MySQL
+    1.5 Aurora
+    1.6 MariaDB
+
+2. 시험 팁: RDS에는 두 가지 기능이 있습니다
+    2.1 Multi-AZ - DR용
+    2.2 복제본을 통한 성능 향상(5개 복제본 읽기 허용)
+
+3. Dynamo라고 하는 비관계형 데이터베이스(JSON/NoSQL)DB
+    3.1 키 값 쌍
+    3.2 표의 열은 달라질 수 있으며, 이는 DB의 다른 행에 영향을 미치지 않습니다.
+
+4. OLTP(Online Transaction Processing)는 OLAP(Online Analytics Processing)와 실행할 쿼리 유형이 다릅니다.
+
+5. Redshift라는 AWS 데이터 웨어하우스 데이터베이스는 DB 관점 및 인프라 계층에서 다른 유형의 아키텍처를 사용합니다.
+
+6. ElastiCache는 클라우드에서 메모리 내 캐시로 쉽게 배포, 운영 및 확장할 수 있는 웹 서비스입니다. 이 서비스는 웹 애플리케이션의 성능을 향상시킵니다. 디스크 기반 데이터베이스에 전적으로 의존하는 대신 메모리 내에서 빠르게 관리되는 정보를 검색할 수 있습니다.
+ElastiCache는 두 개의 오픈 소스 인메모리 캐싱 엔진을 지원합니다.
+    6.1 Memcached
+    6.2 레디스
 
