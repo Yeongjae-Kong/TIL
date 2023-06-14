@@ -9,7 +9,7 @@ _21 TILs and counting..._
 
 ### 3 most recent TILs
 
-- [AWS CCP 내용 정리 - Auto Scaling, Route 53,](AWS/day6_awsccp_note.md) - Wed Jun 14 10:57:34 2023 +0000
+- [AWS CCP 내용 정리 - Auto Scaling, Route 53, Elastic Beanstalk, Cloudformation](AWS/day6_awsccp_note.md) - Wed Jun 14 10:57:34 2023 +0000
 - [AWS CCP 내용 정리 - Cloudfront, EC2, ELB, DB](AWS/day5_awsccp_note.md) - Tue Jun 13 14:24:29 2023 +0000
 - [AWS CCP 내용 정리 - 클라우드 컴퓨팅, Well-Architected, IAM, S3](AWS/day4_awsccp_note.md) - Sun Jun 11 13:25:47 2023 +0000
 
@@ -26,7 +26,7 @@ _21 TILs and counting..._
 - [AWS CCP 도메인](AWS/day3_awsccp_domain.md)
 - [AWS CCP 내용 정리 - 클라우드 컴퓨팅, Well-Architected, IAM, S3](AWS/day4_awsccp_note.md)
 - [AWS CCP 내용 정리 - Cloudfront, EC2, ELB, DB](AWS/day5_awsccp_note.md)
-- [AWS CCP 내용 정리 - Auto Scaling, Route 53,](AWS/day6_awsccp_note.md)
+- [AWS CCP 내용 정리 - Auto Scaling, Route 53, Elastic Beanstalk, Cloudformation](AWS/day6_awsccp_note.md)
 
 ### [DataStructure](#DataStructure)
 - [AVL Tree란?](DataStructure/AVLtree.md)
