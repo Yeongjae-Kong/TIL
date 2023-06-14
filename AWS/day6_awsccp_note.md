@@ -1,4 +1,4 @@
-# AWS CCP 내용 정리 - Auto Scaling, Route 53, 
+# AWS CCP 내용 정리 - Auto Scaling, Route 53, Elastic Beanstalk, Cloudformation
 
 ----------------------------------------
 

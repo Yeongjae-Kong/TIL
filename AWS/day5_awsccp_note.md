@@ -79,7 +79,7 @@ AWS에 로그인 후 아래와 같이 진행
 sudo yum install http -y
 
 Setup index.html - Hello, this is web server 1
-
+ 
 ## ELB (EC2 로드 밸런서)
 
 1. 애플리케이션 로드 밸런서(HTTP 및 HTTPS) - 계층 7 인식(지능적인 의사 결정).
