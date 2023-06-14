@@ -66,7 +66,7 @@ c. SDK 사용하기
 
 * 웹 서버 구축:
 
-AWS에 로그인
+AWS에 로그인 후 아래와 같이 진행
 
     chmod 400 SriAWS.pem
     
