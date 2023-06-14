@@ -67,11 +67,17 @@ c. SDK 사용하기
 * 웹 서버 구축:
 
 AWS에 로그인
+
     chmod 400 SriAWS.pem
+    
     Public DNS를 사용하여 인스턴스에 연결
+    
     c2-100-26-17-63.compute-1.amazonaws.com
+    
     (예: ssh -i "SriAWS.pem" ec2-user@ec2-100-26-17-63.compute-1.amazonaws.com)
+    
 sudo yum install http -y
+
 Setup index.html - Hello, this is web server 1
 
 ## ELB (EC2 로드 밸런서)
