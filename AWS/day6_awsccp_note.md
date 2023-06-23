@@ -9,10 +9,10 @@
  
 ## Route 53 - register Domain
 
-DNS 관리
-트래픽 관리
-가용성 모니터링
-도메인 등록
+- DNS 관리
+- 트래픽 관리
+- 가용성 모니터링
+- 도메인 등록
 
 ### Route 53 exam tips
 
