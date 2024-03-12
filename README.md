@@ -3,9 +3,6 @@
 
 당일 학습한 내용을 정리합니다. README의 경우 GitHub Actions를 통해 자동생성하고 있습니다.
 
-*추가 - CS 전공 지식의 경우 블로그에 더 상세히 정리하고 있습니다. 참고해주세요.
-https://yeongjaekong.tistory.com/
-
 _22 TILs and counting..._
 
 ---
