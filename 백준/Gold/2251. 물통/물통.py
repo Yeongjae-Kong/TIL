@@ -3,6 +3,7 @@
 # x>y, x>z, y>x, y>z, z>x, z>y.
 # => 3개 vertex, 6개 edge.
 # - visited(=flag)를 통해 중복 방지
+# - q=deque(), 이후 while q loop로 bfs 진행.
 
 a,b,c = map(int,input().split())
 
