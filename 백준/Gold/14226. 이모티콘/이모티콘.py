@@ -3,7 +3,7 @@ from collections import deque
 
 input = sys.stdin.readline
 
-s = int(input().strip())
+s = int(input())
 visited = [[0] * 1001 for _ in range(1001)]  # 카운트 세는 리스트
 
 
