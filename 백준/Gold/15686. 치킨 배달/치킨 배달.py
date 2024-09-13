@@ -1,4 +1,5 @@
-from collections import deque
+# 15686 치킨배달
+
 N, M = map(int, input().split())                                # 도시 크기, 남은 치킨집 수
 arr = [list(map(int, input().split())) for _ in range(N)]       # 도시
 
@@ -10,11 +11,11 @@ def dfs(n, i):      # n: 고른 치킨집 수 i: 고른 치킨집 번호
     if n == M:
         for h in house:
             hr, hc = h[0], h[1]
-            dist = 2*N
+            dist = 2 * N
 
             for c in select:
                 cr, cc = c[0], c[1]
-                tmp = abs(hr-cr) + abs(hc-cc)
+                tmp = abs(hr - cr) + abs(hc - cc)
                 if tmp < dist:
                     dist = tmp
             val += dist
@@ -22,16 +23,17 @@ def dfs(n, i):      # n: 고른 치킨집 수 i: 고른 치킨집 번호
         if val < result:
             result = min(val, result)
             return
-	# 고른 치킨 집을 제외하고 dfs
+            
+    # 고른 치킨집을 제외하고 dfs
     for idx in range(i, K):
         select.append(chicken[idx])
-        dfs(n+1, idx+1)
+        dfs(n + 1, idx + 1)
         select.pop()
 
-chicken = deque([])
-house = deque([])
+chicken = []
+house = []
 
-select = deque([])
+select = []
 for a in range(N):
     for b in range(N):
         if arr[a][b] == 1:        # 집 위치 추가
@@ -40,7 +42,7 @@ for a in range(N):
             chicken.append((a, b))
 
 K = len(chicken)             # 총 치킨집 수
-result = N*2*len(house)      # 총 치킨거리 임의의 큰 값
+result = N * 2 * len(house)  # 총 치킨거리 임의의 큰 값
 
 # 조합 시작
 for t in range(K):
