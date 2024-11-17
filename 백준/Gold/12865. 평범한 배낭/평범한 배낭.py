@@ -1,20 +1,26 @@
-import sys
+n, k = map(int, input().split())
+weight = []
+value = []
+for _ in range(n):
+    w, v = map(int, input().split())
+    weight.append(w)
+    value.append(v)
+    
+dp = [[0]*(k+1) for i in range(n+1)]
 
-N, K = map(int, input().split())
-lst = [[0,0]]
-bag = [[0 for _ in range(K + 1)] for _ in range(N + 1)]
+# i - item, j - weight, dp = value
+# dp[i][j] : i번째까지 item에 대해 무게 j까지 최댓값
+#   1 2 3 4 5 6 7
+# 1           13 13
+# 2       8 8 13 13
+# 3     6 8 8 13 14
+# 4
 
-for _ in range(N):
-    lst.append(list(map(int, input().split())))
-
-for i in range(1, N + 1):
-    for j in range(1, K + 1):
-        weight = lst[i][0] 
-        value = lst[i][1]
-       
-        if j < weight:
-            bag[i][j] = bag[i - 1][j] #weight보다 작으면 위의 값을 그대로 가져온다
+for i in range(1,n+1):
+    for j in range(1,k+1):
+        if weight[i-1] <= j:
+            dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i-1]]+value[i-1])
         else:
-            bag[i][j] = max(value + bag[i - 1][j - weight], bag[i - 1][j])
+            dp[i][j] = dp[i-1][j]
 
-print(bag[N][K])
+print(dp[n][k])
