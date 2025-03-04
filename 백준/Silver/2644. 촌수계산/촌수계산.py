@@ -3,26 +3,24 @@ A, B = map(int, input().split())
 M = int(input())
 graph = [[] for _ in range(N+1)]
 visited = [0]*(N+1)
-result = []
 
 for _ in range(M):
   x, y = map(int, input().split())  
   graph[x].append(y)
   graph[y].append(x)
 
-def dfs(v, num):
-  num += 1
-  visited[v] = 1
+result = []
 
-  if v == B:
-    result.append(num)
+def dfs(start, end, cnt):
+    if start == end:
+        return cnt
+    visited[start] = 1
 
-  for i in graph[v]:
-    if not visited[i]:
-      dfs(i, num)
-
-dfs(A, 0)
-if len(result) == 0:
-  print(-1)
-else:
-  print(result[0]-1)
+    for i in graph[start]:
+        if not visited[i]:
+            temp = dfs(i, end, cnt+1)
+            if temp != -1: # start == end를 만족한 경우
+                return temp
+    return -1
+        
+print(dfs(A, B, 0))
