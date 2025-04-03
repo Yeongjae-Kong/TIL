@@ -20,6 +20,7 @@ jobs:
         description:
           당일 학습한 내용을 정리합니다.
           README의 경우 GitHub Actions를 통해 자동생성하고 있습니다.
+          보다 자세한 내용은 https://yeongjaekong.tistory.com/에서 확인하실 수 있습니다.
         footer: |
           [1]: https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
           [2]: https://github.com/jbranchaud/til
