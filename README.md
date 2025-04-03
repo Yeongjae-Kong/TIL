@@ -1,7 +1,8 @@
 # TIL
 > Today I Learned
 
-당일 학습한 내용을 정리합니다. README의 경우 GitHub Actions를 통해 자동생성하고 있습니다. | 보다 자세한 내용은 https://yeongjaekong.tistory.com/에서 확인하실 수 있습니다.
+당일 학습한 내용을 정리합니다. README의 경우 GitHub Actions를 통해 자동생성하고 있습니다. 보다 자세한 내용은 https://yeongjaekong.tistory.com/에서 확인하실 수 있습니다.
+
 
 _22 TILs and counting..._
 
