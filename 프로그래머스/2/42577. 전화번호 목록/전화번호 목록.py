@@ -1,7 +1,14 @@
+from collections import defaultdict
+
 def solution(phone_book):
-    phone_book.sort()  # 사전순 정렬
-    
-    for i in range(len(phone_book) - 1):
-        if phone_book[i+1].startswith(phone_book[i]):  # 앞 번호가 뒷 번호의 접두어인지 확인
-            return False
-    return True
+    answer = True
+    dic = defaultdict(int)
+    for num in phone_book:
+        num_len = len(num)
+        for i in range(1, num_len+1):
+            dic[num[:i]] += 1
+    for num in phone_book:
+        if dic[num] >= 2:
+            answer = False
+            return answer
+    return answer
